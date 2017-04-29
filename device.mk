@@ -242,9 +242,8 @@ PRODUCT_PACKAGES += \
     sensortest
 endif
 
-# for off charging mode
-PRODUCT_PACKAGES += \
-    omni_charger_res_images
+# Charger
+WITH_CM_CHARGER := true
 
 PRODUCT_PACKAGES += \
     libwpa_client \
