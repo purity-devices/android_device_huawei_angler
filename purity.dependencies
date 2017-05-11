@@ -1,7 +1,7 @@
 [
   {
-    "remote": "omnirom",
-    "repository": "android_kernel_huawei_angler",
+    "remote": "github",
+    "repository": "purity-devices/android_kernel_huawei_angler",
     "target_path": "kernel/huawei/angler",
     "revision": "android-7.1"
   },
