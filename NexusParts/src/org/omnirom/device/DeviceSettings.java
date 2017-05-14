@@ -25,7 +25,7 @@ import android.preference.Preference;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
-import android.preference.TwoStatePreference;
+import android.preference.SwitchPreference;
 import android.provider.Settings;
 import android.view.MenuItem;
 import android.util.Log;
@@ -37,7 +37,7 @@ public class DeviceSettings extends PreferenceActivity implements
     public static final String KEY_PROXI_SWITCH = "proxi";
 
     private VibratorStrengthPreference mVibratorStrength;
-    private TwoStatePreference mProxiSwitch;
+    private SwitchPreference mProxiSwitch;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -51,7 +51,7 @@ public class DeviceSettings extends PreferenceActivity implements
             mVibratorStrength.setEnabled(VibratorStrengthPreference.isSupported());
         }
 
-        mProxiSwitch = (TwoStatePreference) findPreference(KEY_PROXI_SWITCH);
+        mProxiSwitch = (SwitchPreference) findPreference(KEY_PROXI_SWITCH);
         mProxiSwitch.setChecked(Settings.System.getInt(getContentResolver(),
                 Settings.System.DEVICE_PROXI_CHECK_ENABLED, 1) != 0);
 

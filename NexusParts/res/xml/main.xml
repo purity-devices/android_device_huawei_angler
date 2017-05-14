@@ -18,7 +18,7 @@
 	    android:key="gesture_category"
 	    android:title="@string/category_gestures_title" >
 
-        <CheckBoxPreference
+        <SwitchPreference
             android:key="proxi"
             android:summary="@string/proxi_summary_head"
             android:title="@string/proxi_title_head"
