@@ -6,18 +6,6 @@
     "revision": "android-7.1"
   },
   {
-    "remote": "omnirom",
-    "repository": "android_hardware_qcom_gps",
-    "target_path": "hardware/qcom/gps",
-    "revision": "android-7.1"
-  },
-  {
-    "remote": "omnirom",
-    "repository": "android_hardware_qcom_camera",
-    "target_path": "hardware/qcom/camera",
-    "revision": "android-7.1"
-  },
-  {
     "remote": "github",
     "repository": "DonkeyCoyote/proprietary_vendor_huawei",
     "target_path": "vendor/huawei",
